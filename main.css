@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 1200px;
+    height: 800px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between; 
+}
+.parent > div{
+    width: calc(100% / 5);
+    height: 100%;
+    background-color: #f3f3f3;
+    border-right: 1px solid #fff;
+    position: relative;
+}
+.head{
+    width: 100%;
+    height: 10%;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.price{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #777;
+}
+.orange{
+    color: orangered;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+}
+.orange::after{
+    content: "year";
+    position: absolute;
+    left: 120%;
+    top: 70%;
+    color: #777;
+    font-size: 16px;
+}
+.info{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info>div{
+    width: 100%;
+    height: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+}
+.one,
+.three,
+.five,
+.seven{
+    background-color: #bebebe;
+}
+.order{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
